@@ -55,8 +55,8 @@ def train(config):
                      settings={"disable_git": True})
 
     # Log code to create a reusable job
-    run.log_code(name="train",
-                 include_fn=lambda path: path.endswith(".py") or path.endswith(".txt"))
+    #run.log_code(name="train",
+    #             include_fn=lambda path: path.endswith(".py") or path.endswith(".txt"))
 
     # Copy your config 
     config = run.config
