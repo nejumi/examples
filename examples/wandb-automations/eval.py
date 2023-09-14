@@ -71,8 +71,8 @@ def eval(config):
                      settings={"disable_git": True})
 
     # Log code to create a reusable job
-    run.log_code(name="eval",
-                 include_fn=lambda path: path.endswith(".py") or path.endswith(".txt"))
+    #run.log_code(name="eval",
+    #             include_fn=lambda path: path.endswith(".py") or path.endswith(".txt"))
 
     config = run.config
 
